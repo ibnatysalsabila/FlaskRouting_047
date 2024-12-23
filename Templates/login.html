@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <form action="/login" method="post">
+            <label for="name">Enter your name</label>
+            <p><input type="text" id="name" name="nm" placeholder="Enter your name" required /></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+    </div>
+</body>
+</html>
